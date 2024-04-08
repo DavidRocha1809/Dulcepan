@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFE8C2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-hero{
+    background-color: #371C18;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.contenedor-soporte{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contenedor-soporte .fa-headset{
+    color: white;
+}
+
+.contenedor-soporte i{
+    font-size: 3.3rem;
+}
+
+.contenido-contenedor-soporte{
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.contenedor-logo i{
+    font-size: 3rem;
+}
+
+.contenedor-logo h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.contenedor-usuario{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.contenedor-usuario .fa-user{
+    font-size: 3rem;
+    color: white;
+    padding-right: 2.5rem;
+    border-right: 1px solid white;
+}
+
+.contenedor-usuario .fa-cart-shopping{
+    font-size: 3rem;
+    color: white;
+    padding-left: 1rem;
+}
+
+.contenedor-carrito{
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+/* *********NAVBAR******** */
+
+.contenedor-navbar{
+    background-color: #F7D28B;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .fa-bars{
+    display: none;
+
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after{
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    left: 50px;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.menu a::after:hover{
+    opacity: 1;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.busqueda{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 2rem;
+    background-color: white;
+    height: 4.4rem;
+    overflow: hidden;
+}
+
+.busqueda input{
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0.2rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.busqueda input::-webkit-search-cancel-button{
+    appearance: none;
+}
+
+.busqueda .btn-buscar{
+    border: none;
+    background-color: #F7D28B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.btn-buscar i{
+    font-size: 2rem;
+    color: white;
+}
+
+/* ++++++ BANNER ++++ */
+
+.banner{
+    background-image: url('../br.jpg');
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.content-banner{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+}
+
+.content-banner h2{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/*-----------------CONTENIDO-----------------*/
+
+.Contenido {
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+}
+
+/*Recuadro*/
+.bebidas {
+    background-color: rgba(55, 28, 24,0.8); /* Color de fondo suave */
+    padding: 20px; /* Espaciado interno para separar el contenido de los bordes */
+    border-radius: 8px; /* Bordes redondeados para suavizar la sección */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 20px auto; /* Centrar la sección horizontalmente */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+    color: white;
+}
+
+/*Título*/
+.bebidas h2 {
+    text-align: center; /* Centrar el título */
+    font-size: 25px;
+    padding: 15px;
+}
+
+.bebidas img{
+    width: 100%;
+    padding: 10px;
+}
+
+/*Diseño parrafps*/
+.bebidas p {
+    font-size: 15px;
+    text-align: justify; /* Justificar los párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 20px;
+}
