@@ -194,7 +194,7 @@ html{
 /* ++++++ BANNER ++++ */
 
 .banner{
-    background-image: url('../../img/blog/br.jpg');
+    background-image: url('../Img blog/br.jpg');
     height: 60rem;
     background-size: cover;
     background-position: center;
@@ -218,7 +218,7 @@ html{
 /*-----------------CONTENIDO-----------------*/
 
 .Contenido {
-    background-image: url(./logo.png);
+    background-image: url(../../ImgIndex/logo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 120%;
