@@ -14,3 +14,10 @@ $(document).ready(function(){
         
     })
 });
+
+btn.onclick = function() {
+    var buscar = document.getElementById("buscar").value;
+    if (buscar == 'hola'){
+        panel.innerHTML = "es una palabra española";
+    }
+}
