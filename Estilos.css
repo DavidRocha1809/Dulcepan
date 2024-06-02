@@ -2,7 +2,7 @@
 
 
 html{
-    font-size: 62.5%;
+    font-size: 50%;
     font-family: 'Poppins', sans-serif;
     background-color: #FFE8C2;
 }
@@ -18,7 +18,7 @@ html{
 /* -------------------------------------------------------------------------- */
 
 .container{
-    max-width: 120rem;
+    max-width: 160rem;
     margin: 0 auto;
 }
 
@@ -46,7 +46,6 @@ html{
 .contenedor-soporte{
     display: flex;
     align-items: center;
-    gap: 2rem;
 }
 
 .contenedor-soporte .fa-headset{
@@ -54,7 +53,8 @@ html{
 }
 
 .contenedor-soporte i{
-    font-size: 3.3rem;
+    font-size: 3rem;
+    padding: 0 1.5rem;
 }
 
 .contenido-contenedor-soporte{
@@ -78,26 +78,34 @@ html{
     color: white;
     font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    letter-spacing: 5px;
 }
 
 .contenedor-usuario{
     display: flex;
-    gap: 1rem;
     cursor: pointer;
+    padding: 0 2rem;
 }
 
 .contenedor-usuario .fa-user{
     font-size: 3rem;
     color: white;
-    padding-right: 2.5rem;
+    padding-right: 1.5rem;
     border-right: 1px solid white;
 }
 
 .contenedor-usuario .fa-cart-shopping{
     font-size: 3rem;
     color: white;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
+}
+
+.text{
+    padding-left: 2rem;
+}
+
+.number{
+    padding-left: 2rem;
 }
 
 .contenedor-carrito{
@@ -116,7 +124,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 0.5rem 4rem;
 }
 
 .navbar .fa-bars{
@@ -126,7 +134,7 @@ html{
 
 .menu{
     display: flex;
-    gap: 2rem;
+    gap: 5.5rem;
 }
 
 .menu li{
@@ -135,9 +143,9 @@ html{
 
 .menu a{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: black;
-    font-weight: 600;
+    font-weight: 580;
     text-transform: uppercase;
     position: relative;
 }
@@ -168,9 +176,9 @@ html{
     display: flex;
     align-items: center;
     border: 2px solid white;
-    border-radius: 2rem;
+    border-radius: 9rem;
     background-color: white;
-    height: 4.4rem;
+    height: 5.4rem;
     overflow: hidden;
 }
 
