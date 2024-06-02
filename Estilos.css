@@ -2,7 +2,7 @@
 
 
 html{
-    font-size: 50%;
+    font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
     background-color: #FFE8C2;
 }
@@ -850,5 +850,38 @@ html{
 }
 
 /**
- *  
- */
+ *   MEDIA QUERIES -- 768px
+ */ 
+
+ @media (max-width: 768px)
+ {
+
+    html{
+        font-size: 55%;
+    }
+
+    .hero{
+        padding: 2rem;
+    }
+
+    .contenido-contenedor-soporte{
+        display: none;
+    }
+
+    .contenedor-carrito{
+        display: none;
+    }
+
+    .busqueda input:hover{
+        display: none;
+    }
+
+    .contenedor-navbar .fa-bars{
+        display: block;
+        color: #fff;
+        font-size: 3rem;
+        padding: 0rem 1.5rem;
+    }
+
+
+ }
