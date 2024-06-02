@@ -215,7 +215,7 @@ html{
 /* ++++++ BANNER ++++ */
 
 .banner{
-    background-image: linear-gradient(100deg, #000, #00000020), url('img/Captura.PNG');
+    background-image: linear-gradient(100deg, #000, #00000020), url('Blog/Imgblog/Captura.jpg');
     height: 60rem;
     background-size: cover;
     background-position: center;
@@ -568,6 +568,8 @@ html{
     gap: 2rem;
 }
 
+
+
 .container-blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -645,7 +647,7 @@ html{
 }
 
 .content-blog span{
-    color: #F7D28B;
+    color: #000;
     font-size: 1.3rem;
 }
 
@@ -846,3 +848,7 @@ html{
     font-weight: 400;
     font-size: 1.6rem;
 }
+
+/**
+ *  
+ */
