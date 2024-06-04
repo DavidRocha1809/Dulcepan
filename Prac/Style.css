@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+/*Limpieza de todo*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+/*Diseño Body*/
+body{
+    background-color: white;
+}
+
+/*----------------------------NAVBAR---------------------------*/
+
+/*Diseño header (navbar)*/
+.header{
+    background-color: #27A4F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+/*Logo*/
+.header .logo{
+    cursor: pointer;
+}
+
+/*Dimensiones logo*/
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+/*Transición logo*/
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+/*Borrado de underline del nav*/
+.header .nav-links{
+    list-style: none;
+}
+
+/*Comportamiento li*/
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+/*Transición li y menú*/
+.header .nav-links li:hover, .overlay a:hover{
+    transform: scale(1.1);
+}
+
+/*Diseño links navbar*/
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;   
+    font-weight: bold; 
+}
+
+/**/
+.menu {
+    display:none;
+}
+
+/*Diseño botón*/
+.header .btn button, .header .menu button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/*transición botón*/
+.header .btn button:hover, .header .menu button:hover{
+    background-color: #e2f1f8;
+    transform: scale(1.1);
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 800px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+
+/*-----NAVBAR MOBILE-----*/
+
+.header a{
+    text-decoration: none;  
+    /*borramos el que teniamos en .header .nav-links a*/ 
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: #27A4F2;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/*----------------------------CONTENIDO---------------------------*/
+/*Dimensiones del sectiom*/
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 3.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/*Personalización del botón "Más detalles"*/
+.btn-detalles{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: #27A4F2;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    transition: all .3s linear;
+    text-decoration: none;
+}
+
+/*Hover Botón */
+.btn-detalles:hover{
+    transform: scale(1.1);
+}
+
+/*Dimensiones del contenido de inicio*/
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Dimensionando img*/
+.inicio .img-inic img{
+    width: 40vw;
+}
+
+/*Dimensionando h3 y span del inicio*/
+.inicio .content h3, span{
+    font-size: 5.5rem;
+    text-transform: uppercase;
+}
+
+/*Colores inicio*/
+.inicio .content h3 span{
+    color: #27A4F2;
+    text-transform: uppercase;
+}
+
+/*Texto de inicio*/
+.inicio .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+/*RESPONSIVE*/
+@media(max-width:990px){
+    .inicio{
+        flex-flow: column-reverse;
+    }
+
+    .inicio .img-inic img{
+        width: 100%;
+    }
+
+    .inicio .content h3, span{
+        font-size: 3.6rem;
+    }
+
+    .inicio .content p{
+        font-size: 1.5rem;
+    }
+
+    .inicio .btn-detalles{
+        font-size: .7rem;
+        padding: .8rem;
+    }
+
+}
+
+
+/*----------------------------FOOTER---------------------------*/
+
+/*Contenedor total del footer*/
+.contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #eceff1;
+}
+
+/*Contenedor principal (para mayor manipulación)*/
+.contenedor-part1 {
+    flex: 1;
+}
+
+/*Contenedor principal (carac.)*/
+.contenido {
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    
+}
+
+/*RESPONSIVE*/
+@media (min-width: 768px) {
+    .contenido {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 1.5rem;
+    }
+}
+
+/*Sección de los títulos 1*/
+.seccion-footer1 {
+    padding: 0;
+}
+
+/*Titulo */
+.seccion-footer1 h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/*Dimensiones listas*/
+.seccion-footer1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Dimensiones links*/
+.seccion-footer1 ul li {
+    margin-bottom: 0.5rem;
+}
+
+/*Diseño links*/
+.seccion-footer1 ul li a {
+    color: #374151;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/*Coloreo al pasar el cursor*/
+.seccion-footer1 ul li a:hover {
+    color: #27A4F2;
+}
+
+/*Diseño Recuadro del footer*/
+.recuadro-footer {
+    background-color: #27A4F2;
+    color: white;
+    padding: 1.5rem;
+}
+
+/*Titulo del recuadro (dimensiones)*/
+.recuadro-footer h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/*Texto del recuadro*/
+.recuadro-footer p {
+    margin-bottom: 1rem;
+}
+
+/*Link del recuadro*/
+.recuadro-footer a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+/*Coloreo del link del recuadro*/
+.recuadro-footer a:hover {
+    font-weight: bold;
+}
+
+/*Footer del footer (diseño)*/
+.footer-footer {
+    color: #4b5563;
+    padding: 1rem 0;
+}
+
+/*Contenido del footer del footer*/
+.footer-footer-contenido {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*RESPONSIVE*/
+@media (min-width: 768px) {
+    .footer-footer-contenido {
+        flex-direction: row;
+    }
+}
