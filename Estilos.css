@@ -997,7 +997,7 @@ html{
 
     .container-blogs{
         grid-template-columns: 1fr;
-        gap: 17rem;
+        gap: 20rem;
         height: 72rem;
     }
 
