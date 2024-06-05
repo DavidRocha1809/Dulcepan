@@ -127,7 +127,7 @@ html{
     padding: 0.5rem 4rem;
 }
 
-.navbar .fa-bars{
+.navbar .fa-bars {
     display: none;
 
 }
@@ -955,6 +955,10 @@ html{
 
     html{
         font-size: 42.5%;
+    }
+
+    .busqueda{
+        align-items: right;
     }
 
     .content-banner{
