@@ -987,7 +987,7 @@ html{
     }
 
     .container-products{
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
         gap: 1rem;
     }
 
@@ -997,6 +997,7 @@ html{
 
     .container-blogs{
         grid-template-columns: 1fr;
+        gap: 17rem;
         height: 72rem;
     }
 
