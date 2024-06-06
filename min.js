@@ -21,3 +21,5 @@ btn.onclick = function() {
         panel.innerHTML = "es una palabra española";
     }
 }
+
+const fabars = document.querySelector(".navbar container")

@@ -137,6 +137,10 @@ html{
     gap: 5.5rem;
 }
 
+.nav-responsive{
+    display: none;
+}
+
 .menu li{
     list-style: none;
 }
@@ -883,6 +887,19 @@ html{
         padding: 0rem 1.5rem;
     }
 
+    .nav-responsive{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0%;
+        width: 100%;
+        align-items: center;
+        background-color: #fff;
+        gap: 10px;
+        padding: 15px;
+    }
+
     .menu{
         display: none;
     }
@@ -936,7 +953,7 @@ html{
     .container-blogs{
         overflow: hidden;
         grid-template-columns: 1fr 1fr;
-        height: 52rem;
+        height: 42rem;
     }
 
     .menu-footer{
