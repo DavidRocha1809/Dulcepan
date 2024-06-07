@@ -59,9 +59,9 @@
                     <li><a href="#">Ubícanos</a></li>
                     <li><a href="#">Contáctanos</a></li>
                 </ul>
-                <form class="busqueda">
-                    <input type="search" placeholder="Buscar...">
-                    <button class="btn-buscar">
+                <form class="busqueda" onsubmit="return searchContent(event)">
+                    <input type="search" id="search-input" placeholder="Buscar..." required>
+                    <button type="submit" class="btn-buscar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>

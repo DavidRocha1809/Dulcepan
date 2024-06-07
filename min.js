@@ -1,3 +1,26 @@
+function searchContent(event) {
+    event.preventDefault();
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const content = document.getElementById('content');
+    const paragraphs = content.getElementsByTagName('p');
+    
+    // Remove previous highlights
+    for (const paragraph of paragraphs) {
+        paragraph.innerHTML = paragraph.textContent;
+    }
+
+    // Highlight new search results
+    if (query) {
+        for (const paragraph of paragraphs) {
+            const text = paragraph.textContent.toLowerCase();
+            if (text.includes(query)) {
+                const regex = new RegExp(`(${query})`, 'gi');
+                paragraph.innerHTML = paragraph.textContent.replace(regex, '<span class="highlight">$1</span>');
+            }
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const menuIcon = document.querySelector('.fa-bars');
     const menu = document.querySelector('.menu');
@@ -24,11 +47,25 @@ $(document).ready(function(){
     })
 });
 
-btn.onclick = function() {
-    var buscar = document.getElementById("buscar").value;
-    if (buscar == 'hola'){
-        panel.innerHTML = "es una palabra española";
+function searchContent(event) {
+    event.preventDefault();
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const content = document.getElementById('content');
+    const paragraphs = content.getElementsByTagName('p');
+    
+    // Remove previous highlights
+    for (const paragraph of paragraphs) {
+        paragraph.innerHTML = paragraph.textContent;
+    }
+
+    // Highlight new search results
+    if (query) {
+        for (const paragraph of paragraphs) {
+            const text = paragraph.textContent.toLowerCase();
+            if (text.includes(query)) {
+                const regex = new RegExp(`(${query})`, 'gi');
+                paragraph.innerHTML = paragraph.textContent.replace(regex, '<span class="highlight">$1</span>');
+            }
+        }
     }
 }
-
-
