@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.fa-bars');
+    const menu = document.querySelector('.menu');
+
+    menuIcon.addEventListener('click', function() {
+        menu.classList.toggle('show');
+    });
+});
+
 $(document).ready(function(){
     $('.container-options span:first').addClass('active');
     $('.container-products').hide();
@@ -22,12 +31,4 @@ btn.onclick = function() {
     }
 }
 
-const fabars = document.querySelector('.responsive');
-const iconbars = responsive.querySelector('i');
-const navigation = document.querySelector('nav');
 
-fabars.addEventlistener('click', () =>{
-    nav.classList.toggle('nav-responsive');
-
-
-});
