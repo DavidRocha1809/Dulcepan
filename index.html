@@ -524,26 +524,17 @@
                     </ul>
                 </div>
 
-                <div class="my-account">
-                    <p class="title-footer">Mi cuenta</p>
-                    <ul>
-                        <li><a href="#">Mi cuenta</a></li>
-                        <li><a href="#">Historial de ordenes</a></li>
-                        <li><a href="#">Lista de deseos</a></li>
-                        <li><a href="#">Boletin</a></li>
-                        <li><a href="#">Reembolsos</a></li>
-                    </ul>
-                </div>
-
-                <div class="newaletter">
-                    <p class="title-footer">Boletin Informativo</p>
+                <div class="newsletter">
+                    <p class="title-footer">Boletín Informativo</p>
                     <div class="content">
                         <p>
-                            Suscribete a nuestros boletines ahora y mantente al
-                             dia con nuevas colecciones y ofertas exclusivas
+                            Suscríbete a nuestros boletines ahora y mantente al
+                            día con nuevas colecciones y ofertas exclusivas
                         </p>
-                        <input type="email" placeholder="Ingresa el correo aqui...">
-                        <button>Suscribete</button>
+                        <form id="subscribe-form" action="subscribe.php" method="post">
+                            <input type="email" name="email" placeholder="Ingresa el correo aquí..." required>
+                            <button type="submit">Suscríbete</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -688,7 +688,7 @@ html{
 
 .menu-footer{
     display: grid;
-    grid-template-columns:  repeat(3,1fr) 30rem;
+    grid-template-columns:  repeat(2,1fr) 30rem;
     gap: 3rem;
     justify-items: center;
 }
@@ -764,21 +764,6 @@ html{
     background-color: #00acee;
 }
 
-.youtube{
-    background-color: #c4302b;
-}
-
-.Pinterest{
-    background-color: #c8232c;
-}
-
-.Tiktok{
-    background: linear-gradient(
-        #ff0050,
-        #00f2ea,
-        #000000
-    );
-}
 
 .Instagram{
     background: linear-gradient(
