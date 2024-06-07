@@ -24,4 +24,10 @@ btn.onclick = function() {
 
 const fabars = document.querySelector('.responsive');
 const iconbars = responsive.querySelector('i');
-const navigation = document.querySelector
+const navigation = document.querySelector('nav');
+
+fabars.addEventlistener('click', () =>{
+    nav.classList.toggle('nav-responsive');
+
+
+});
