@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFE8C2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-hero{
+    background-color: #371C18;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.contenedor-soporte{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contenedor-soporte .fa-headset{
+    color: white;
+}
+
+.contenedor-soporte i{
+    font-size: 3.3rem;
+}
+
+.contenido-contenedor-soporte{
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.contenedor-logo i{
+    font-size: 3rem;
+}
+
+.contenedor-logo h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.contenedor-usuario{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.contenedor-usuario .fa-user{
+    font-size: 3rem;
+    color: white;
+    padding-right: 2.5rem;
+    border-right: 1px solid white;
+}
+
+.contenedor-usuario .fa-cart-shopping{
+    font-size: 3rem;
+    color: white;
+    padding-left: 1rem;
+}
+
+.contenedor-carrito{
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+/* *********NAVBAR******** */
+
+.contenedor-navbar{
+    background-color: #F7D28B;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .fa-bars{
+    display: none;
+
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after{
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    left: 50px;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.menu a::after:hover{
+    opacity: 1;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.busqueda{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 2rem;
+    background-color: white;
+    height: 4.4rem;
+    overflow: hidden;
+}
+
+.busqueda input{
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0.2rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.busqueda input::-webkit-search-cancel-button{
+    appearance: none;
+}
+
+.busqueda .btn-buscar{
+    border: none;
+    background-color: #F7D28B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.btn-buscar i{
+    font-size: 2rem;
+    color: white;
+}
+
+/* ++++++ BANNER ++++ */
+
+
+
+.content-banner{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+}
+
+.content-banner p{
+    color: #F7D28B;
+    font-size:  1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.content-banner h2{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.content-banner a{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: black;
+    background-color: #F7D28B;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            CONTENIDO PRINCIPAL                             */
+/* -------------------------------------------------------------------------- */
+/*Fondo del contenido principal*/
+body{
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Contenedor de todo el recuadro del carrito (ubicación)*/
+.contenedor-carrito-real {
+    font-size: medium;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Diseño interior carrito y dimensiones*/
+.carrito {
+    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+/*Título principal del carrito*/
+.carrito h1 {
+    margin: 0;
+    font-size: 24px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/*Dimensiones de la tabla superior*/
+.carrito table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/*Separación y orden en filas y su contenido*/
+.carrito table th,
+.carrito table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/*Negritas en los títulos de la tabla*/
+.carrito table th {
+    font-weight: bold;
+}
+
+/* TEXTO ELIMINAR A LA DERECHA
+.carrito table td:last-child {
+    text-align: right;
+}*/
+
+/*Espaciado entre el subtitulo h2 (inicio del resumen)*/
+.resumen {
+    margin-top: 20px;
+}
+
+/**/
+.resumen table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*Ajustes en la tabla inferior (resumen)*/
+.resumen table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/*Ultima columna a la drecha*/
+.resumen table td:last-child {
+    text-align: right;
+}
+
+/*Alineación botón pagar*/
+.pagar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Diseño botón pagar*/
+.pagar button {
+    background-color: #371C18;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*Diseño de botón eliminar*/
+.eliminar {
+    background-color: white;
+    color: black;
+    border-color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carrito table, .resumen table {
+        width: 100%;
+        display: block;
+    }
+
+    .carrito table thead, .resumen table thead {
+        display: none;
+    }
+
+    .carrito table tbody tr, .resumen table tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #e0e0e0;
+    }
+
+    .carrito table td, .resumen table td {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        border-bottom: none;
+        padding: 10px 5px;
+    }
+
+    .carrito table td:last-child, .resumen table td:last-child {
+        text-align: center;
+    }
+
+    .carrito table td:before, .resumen table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .pagar button {
+        width: 100%;
+    }
+}

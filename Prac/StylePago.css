@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFE8C2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Contendor de pago*/
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+/*Contenedor de formulario*/
+.contenedor form {
+    width: 700px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*Para poner las filas en paralelo (columnas) + separación*/
+form .fila {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;  /*Pasa todo hacia abajo de aceurdo a la ventana*/
+}
+
+/*Para extender por el contenedor los input*/
+.fila .columna {
+    flex: 1 1 250px;
+}
+
+/*Acomodo del título*/
+.columna .titulo {
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/*Separación de las columnas*/
+.columna .input-box {
+    margin: 15px 0;
+}
+
+/*Separación entre el span y el input*/
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*Personalización del input*/
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border:  1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/*columnas en las columnas*/
+.columna .flex {
+    display:  flex;
+    gap: 15px;
+}
+
+/*Separación de lo normalxd*/
+.flex .input-box {
+    margin-top: 5px;
+}
+
+/*Acomodo de imagen de tarjetas*/
+.input-box img {
+    height: 34px;
+    margin-top: 0;
+    filter: drop-shadow(0 0 1px black);
+}
+
+/*Diseño botón*/
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #371C18;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*Hover botón*/
+form .btn:hover {
+    background: #FFE8C2;
+    color: #371C18;
+}
